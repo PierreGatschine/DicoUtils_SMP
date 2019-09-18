@@ -11,23 +11,27 @@ public class DicoIhm {
 
     public String read() {
         String inputType = input.nextLine();
-        // input.nextLine();
         return inputType;
     }
 
     public void menu() {
-        System.out.println( "************************" );
-        System.out.println( "********DicoUtils*******" );
-        System.out.println( "************************" );
-        System.out.println( "Enter your choice : " );
-        System.out.println( "0 : exit " );
-        System.out.println( "1 : start letters of word " );
-        System.out.println( "2 : end letters of word  " );
-        System.out.println( "3 : party of word" );
 
+        display( "*************************************************" );
+        display( "*********************DicoUtils*******************" );
+        display( "*************************************************" );
+        display( "MENU OF CHOICES : " );
+        display( "     0 : Exit (Leave this menu program)" );
+        display( "     1 : Search  the presence  of an exact  word" );
+        display( "     2 : Search all words that start with a value" );
+        display( "     3 : Search all  words  that end with a value" );
+        display( "     4 : Search all  words  that contain  a value" );
+        display( "     5 : Search words  with  a regular expression\n" );
+        display( "    Enter a number (among the possible choices)" );
+        display( "    then type RETURN" );
     }
 
     public void display( String valueDisplay ) {
         System.out.println( valueDisplay );
     }
+
 }

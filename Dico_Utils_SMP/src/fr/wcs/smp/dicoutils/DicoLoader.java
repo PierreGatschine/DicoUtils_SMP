@@ -26,10 +26,7 @@ public class DicoLoader {
         }
 
         bufferedreader.close();
-        /*
-         * Iterator<String> iter = listWord.iterator(); while ( iter.hasNext() )
-         * { System.out.println( "ok" ); }
-         */
+
         return listWord;
 
     }
